@@ -52,10 +52,10 @@ class ViewController: UIViewController {
     }()
     
     lazy var progressBar: UIProgressView = {
-        let progressview = UIProgressView(progressViewStyle: .bar)
+        let progressview = UIProgressView(progressViewStyle: .default)
         progressview.trackTintColor = UIColor.ProgressbarTrack
         progressview.progressTintColor = UIColor.ProgressbarColor1
-        progressview.layer.cornerRadius = 10
+        progressview.layer.cornerRadius = 13
         progressview.layer.masksToBounds = true
         return progressview
     }()
@@ -70,11 +70,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        view.addSubview(waterCounter)
         view.addSubview(button250)
         view.addSubview(button500)
         view.addSubview(progressBar)
         view.addSubview(cloudImage)
+        view.addSubview(waterCounter)
         view.layer.insertSublayer(gradientBackground, at: 0)
         
         waterCounter.translatesAutoresizingMaskIntoConstraints = false
@@ -83,10 +83,10 @@ class ViewController: UIViewController {
         progressBar.translatesAutoresizingMaskIntoConstraints = false
         cloudImage.translatesAutoresizingMaskIntoConstraints = false
 
-//        NSLayoutConstraint.activate([
-//            waterCounter.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 190),
-//            waterCounter.topAnchor.constraint(equalTo: view.topAnchor, constant: 170)
-//        ])
+        NSLayoutConstraint.activate([
+            waterCounter.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            waterCounter.topAnchor.constraint(equalTo: view.topAnchor, constant: 170)
+        ])
         
         NSLayoutConstraint.activate([
             button250.widthAnchor.constraint(equalToConstant: 100),
@@ -104,8 +104,8 @@ class ViewController: UIViewController {
         
         NSLayoutConstraint.activate([
             progressBar.widthAnchor.constraint(equalToConstant: 205),
-            progressBar.heightAnchor.constraint(equalToConstant: 20),
-            progressBar.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 92),
+            progressBar.heightAnchor.constraint(equalToConstant: 25),
+            progressBar.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             progressBar.topAnchor.constraint(equalTo: view.topAnchor, constant: 230)
         
         ])
@@ -113,7 +113,7 @@ class ViewController: UIViewController {
         NSLayoutConstraint.activate([
             cloudImage.widthAnchor.constraint(equalToConstant: 205),
             cloudImage.heightAnchor.constraint(equalToConstant: 127.35),
-            cloudImage.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 95),
+            cloudImage.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             cloudImage.topAnchor.constraint(equalTo: view.topAnchor, constant: 90)
         ])
     }
