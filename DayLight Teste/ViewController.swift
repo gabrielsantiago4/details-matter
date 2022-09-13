@@ -30,7 +30,6 @@ class ViewController: UIViewController {
         let title = UILabel()
         title.textColor = .black
         title.text = "0"
-//        title.frame = CGRect(x: 180, y: 150, width: 80, height: 60)
         return title
     }()
     
@@ -39,7 +38,6 @@ class ViewController: UIViewController {
         button.setImage(UIImage(named: "glass"), for: .normal)
         button.layer.cornerRadius = 15
         button.layer.masksToBounds = true
-//        button.frame = CGRect(x: 70, y: 680, width: 80, height: 100)
         button.addTarget(self, action: #selector(ViewController.addWater250), for: .touchUpInside)
         return button
     }()
@@ -49,7 +47,6 @@ class ViewController: UIViewController {
         button.setImage(UIImage(named: "bottle"), for: .normal)
         button.layer.cornerRadius = 15
         button.layer.masksToBounds = true
-//        button.frame = CGRect(x: 240, y: 680, width: 80, height: 100)
         button.addTarget(self, action: #selector(ViewController.addWater500), for:.touchUpInside)
         return button
     }()
@@ -60,8 +57,6 @@ class ViewController: UIViewController {
         progressview.progressTintColor = UIColor.ProgressbarColor1
         progressview.layer.cornerRadius = 10
         progressview.layer.masksToBounds = true
-//        progressview.frame = CGRect(x: 35, y: 550, width: 210, height: 90)
-//        progressview.transform = CGAffineTransform(scaleX: 1, y: 3)
         return progressview
     }()
     
