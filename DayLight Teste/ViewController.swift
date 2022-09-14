@@ -27,10 +27,11 @@ class ViewController: UIViewController {
     }()
     
     lazy var waterCounter: UILabel = {
-        let title = UILabel()
-        title.textColor = .black
-        title.text = "0"
-        return title
+        let waterCounter = UILabel()
+        waterCounter.font = UIFont(name: "Quantico-Bold", size: 30)
+        waterCounter.textColor = .CounterColor
+        waterCounter.text = "0"
+        return waterCounter
     }()
     
     lazy var button250 : UIButton = {
@@ -52,12 +53,14 @@ class ViewController: UIViewController {
     }()
     
     lazy var progressBar: UIProgressView = {
-        let progressview = UIProgressView(progressViewStyle: .default)
-        progressview.trackTintColor = UIColor.ProgressbarTrack
-        progressview.progressTintColor = UIColor.ProgressbarColor1
-        progressview.layer.cornerRadius = 13
-        progressview.layer.masksToBounds = true
-        return progressview
+        let progressBar = UIProgressView(progressViewStyle: .default)
+        progressBar.trackTintColor = UIColor.ProgressbarTrack
+        progressBar.progressTintColor = UIColor.ProgressbarColor1
+        progressBar.layer.cornerRadius = 13
+        progressBar.layer.sublayers![1].cornerRadius = 13
+        progressBar.subviews[1].clipsToBounds = true
+        progressBar.layer.masksToBounds = true
+        return progressBar
     }()
     
     lazy var cloudImage: UIImageView = {
@@ -85,7 +88,7 @@ class ViewController: UIViewController {
 
         NSLayoutConstraint.activate([
             waterCounter.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            waterCounter.topAnchor.constraint(equalTo: view.topAnchor, constant: 170)
+            waterCounter.topAnchor.constraint(equalTo: view.topAnchor, constant: 140)
         ])
         
         NSLayoutConstraint.activate([
@@ -122,16 +125,18 @@ class ViewController: UIViewController {
     
     @objc func addWater250() {
         self.waterDrank += 250
-        self.waterCounter.text = "\(self.waterDrank)"
+        self.waterCounter.text = "\(self.waterDrank / 1000) l"
     }
     
     @objc func addWater500() {
         self.waterDrank += 500
-        self.waterCounter.text = "\(self.waterDrank)"
+        self.waterCounter.text = "\(self.waterDrank / 1000) l"
     }
     
     
 }
+
+
 
 extension UIColor {
     
@@ -155,5 +160,7 @@ extension UIColor {
         return UIColor(red: 154.0 / 255.0, green: 213.0 / 255.0, blue: 255.0 / 255.0, alpha: 1.0)
     }
     
-    
+    class var CounterColor: UIColor {
+        return UIColor(red: 13 / 255.0, green: 38 / 255.0, blue: 102 / 255.0, alpha: 1.0)
+    }
 }

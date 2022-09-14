@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36ACF89928D1502B00AD8496 /* Quantico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36ACF89828D1502B00AD8496 /* Quantico-Regular.ttf */; };
+		36ACF89D28D1541700AD8496 /* Quantico-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36ACF89C28D1541700AD8496 /* Quantico-Bold.ttf */; };
 		36B9BFCA28CE1CAB00BF1D80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B9BFC928CE1CAB00BF1D80 /* AppDelegate.swift */; };
 		36B9BFCE28CE1CAB00BF1D80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B9BFCD28CE1CAB00BF1D80 /* ViewController.swift */; };
 		36B9BFD328CE1CAB00BF1D80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36B9BFD228CE1CAB00BF1D80 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		36ACF89828D1502B00AD8496 /* Quantico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quantico-Regular.ttf"; sourceTree = "<group>"; };
+		36ACF89C28D1541700AD8496 /* Quantico-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quantico-Bold.ttf"; sourceTree = "<group>"; };
 		36B9BFC628CE1CAB00BF1D80 /* DayLight Teste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DayLight Teste.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36B9BFC928CE1CAB00BF1D80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36B9BFCD28CE1CAB00BF1D80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,6 +37,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36ACF89428D14A6800AD8496 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				36ACF89C28D1541700AD8496 /* Quantico-Bold.ttf */,
+				36ACF89828D1502B00AD8496 /* Quantico-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		36B9BFBD28CE1CAB00BF1D80 = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +70,7 @@
 				36B9BFD228CE1CAB00BF1D80 /* Assets.xcassets */,
 				36B9BFD428CE1CAB00BF1D80 /* LaunchScreen.storyboard */,
 				36B9BFD728CE1CAB00BF1D80 /* Info.plist */,
+				36ACF89428D14A6800AD8496 /* Fonts */,
 			);
 			path = "DayLight Teste";
 			sourceTree = "<group>";
@@ -121,6 +135,8 @@
 			files = (
 				36B9BFD628CE1CAB00BF1D80 /* LaunchScreen.storyboard in Resources */,
 				36B9BFD328CE1CAB00BF1D80 /* Assets.xcassets in Resources */,
+				36ACF89928D1502B00AD8496 /* Quantico-Regular.ttf in Resources */,
+				36ACF89D28D1541700AD8496 /* Quantico-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
