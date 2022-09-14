@@ -65,17 +65,23 @@ class ViewController: UIViewController {
         cloudCounter.image = UIImage(named: "Vector")
         return cloudCounter
     }()
+    
+    var lakeView =  LakeView()
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        view.addSubview(waterCounter)
-        view.addSubview(button250)
-        view.addSubview(button500)
-        view.addSubview(progressBar)
-        view.addSubview(cloudImage)
+        
+        
+//        view.addSubview(button250)
+//        view.addSubview(button500)
+//        view.addSubview(progressBar)
+//        view.addSubview(cloudImage)
         view.layer.insertSublayer(gradientBackground, at: 0)
+        
+        view.addSubview(lakeView)
+
         
         waterCounter.translatesAutoresizingMaskIntoConstraints = false
         button250.translatesAutoresizingMaskIntoConstraints = false
@@ -89,33 +95,42 @@ class ViewController: UIViewController {
 //        ])
         
         NSLayoutConstraint.activate([
-            button250.widthAnchor.constraint(equalToConstant: 100),
-            button250.heightAnchor.constraint(equalToConstant: 130),
-            button250.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 52),
-            button250.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50)
+            lakeView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.3),
+            lakeView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            lakeView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            lakeView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            lakeView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+
         ])
         
-        NSLayoutConstraint.activate([
-            button500.widthAnchor.constraint(equalToConstant: 100),
-            button500.heightAnchor.constraint(equalToConstant: 130),
-            button500.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -52),
-            button500.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50)
-        ])
-        
-        NSLayoutConstraint.activate([
-            progressBar.widthAnchor.constraint(equalToConstant: 205),
-            progressBar.heightAnchor.constraint(equalToConstant: 20),
-            progressBar.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 92),
-            progressBar.topAnchor.constraint(equalTo: view.topAnchor, constant: 230)
-        
-        ])
-        
-        NSLayoutConstraint.activate([
-            cloudImage.widthAnchor.constraint(equalToConstant: 205),
-            cloudImage.heightAnchor.constraint(equalToConstant: 127.35),
-            cloudImage.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 95),
-            cloudImage.topAnchor.constraint(equalTo: view.topAnchor, constant: 90)
-        ])
+//        NSLayoutConstraint.activate([
+//            button250.widthAnchor.constraint(equalToConstant: 100),
+//            button250.heightAnchor.constraint(equalToConstant: 130),
+//            button250.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 52),
+//            button250.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50)
+//        ])
+//
+//        NSLayoutConstraint.activate([
+//            button500.widthAnchor.constraint(equalToConstant: 100),
+//            button500.heightAnchor.constraint(equalToConstant: 130),
+//            button500.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -52),
+//            button500.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50)
+//        ])
+//
+//        NSLayoutConstraint.activate([
+//            progressBar.widthAnchor.constraint(equalToConstant: 205),
+//            progressBar.heightAnchor.constraint(equalToConstant: 20),
+//            progressBar.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 92),
+//            progressBar.topAnchor.constraint(equalTo: view.topAnchor, constant: 230)
+//
+//        ])
+//
+//        NSLayoutConstraint.activate([
+//            cloudImage.widthAnchor.constraint(equalToConstant: 205),
+//            cloudImage.heightAnchor.constraint(equalToConstant: 127.35),
+//            cloudImage.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 95),
+//            cloudImage.topAnchor.constraint(equalTo: view.topAnchor, constant: 90)
+//        ])
     }
 
     

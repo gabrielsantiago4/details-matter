@@ -11,6 +11,23 @@
 		36B9BFCE28CE1CAB00BF1D80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B9BFCD28CE1CAB00BF1D80 /* ViewController.swift */; };
 		36B9BFD328CE1CAB00BF1D80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36B9BFD228CE1CAB00BF1D80 /* Assets.xcassets */; };
 		36B9BFD628CE1CAB00BF1D80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36B9BFD428CE1CAB00BF1D80 /* LaunchScreen.storyboard */; };
+		4E03FDC228D0AE2400B556FC /* dry.dae in Resources */ = {isa = PBXBuildFile; fileRef = 4E03FDC028D0AE2400B556FC /* dry.dae */; };
+		4E03FDC328D0AE2400B556FC /* Imagem0(unica).png in Resources */ = {isa = PBXBuildFile; fileRef = 4E03FDC128D0AE2400B556FC /* Imagem0(unica).png */; };
+		4E03FDC528D0AEAD00B556FC /* lakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E03FDC428D0AEAD00B556FC /* lakeView.swift */; };
+		4E03FDC828D0D11100B556FC /* peixe1.dae in Resources */ = {isa = PBXBuildFile; fileRef = 4E03FDC628D0D11100B556FC /* peixe1.dae */; };
+		4E03FDC928D0D11100B556FC /* peixeTextura1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E03FDC728D0D11100B556FC /* peixeTextura1.png */; };
+		4E03FDCB28D2019400B556FC /* dry-1.dae in Resources */ = {isa = PBXBuildFile; fileRef = 4E03FDCA28D2019400B556FC /* dry-1.dae */; };
+		4E03FDCD28D201A600B556FC /* dry-1-texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E03FDCC28D201A600B556FC /* dry-1-texture.png */; };
+		4E03FDD028D2025F00B556FC /* water-1-texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E03FDCE28D2025F00B556FC /* water-1-texture.png */; };
+		4E03FDD128D2025F00B556FC /* water1.dae in Resources */ = {isa = PBXBuildFile; fileRef = 4E03FDCF28D2025F00B556FC /* water1.dae */; };
+		4ECFD2DB28D2049F00ED205A /* wet-1.dae in Resources */ = {isa = PBXBuildFile; fileRef = 4ECFD2D928D2049F00ED205A /* wet-1.dae */; };
+		4ECFD2DC28D2049F00ED205A /* wet-1-texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ECFD2DA28D2049F00ED205A /* wet-1-texture.png */; };
+		4ECFD2DF28D204D900ED205A /* water2.dae in Resources */ = {isa = PBXBuildFile; fileRef = 4ECFD2DD28D204D900ED205A /* water2.dae */; };
+		4ECFD2E028D204D900ED205A /* water-2-texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ECFD2DE28D204D900ED205A /* water-2-texture.png */; };
+		4ECFD2E328D205A800ED205A /* wet-2-texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ECFD2E128D205A800ED205A /* wet-2-texture.png */; };
+		4ECFD2E428D205A800ED205A /* wet-2.dae in Resources */ = {isa = PBXBuildFile; fileRef = 4ECFD2E228D205A800ED205A /* wet-2.dae */; };
+		4ECFD2E728D205DE00ED205A /* water-3-texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ECFD2E528D205DE00ED205A /* water-3-texture.png */; };
+		4ECFD2EA28D2065000ED205A /* water3.dae in Resources */ = {isa = PBXBuildFile; fileRef = 4ECFD2E928D2065000ED205A /* water3.dae */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +37,23 @@
 		36B9BFD228CE1CAB00BF1D80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36B9BFD528CE1CAB00BF1D80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36B9BFD728CE1CAB00BF1D80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E03FDC028D0AE2400B556FC /* dry.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = dry.dae; sourceTree = "<group>"; };
+		4E03FDC128D0AE2400B556FC /* Imagem0(unica).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Imagem0(unica).png"; sourceTree = "<group>"; };
+		4E03FDC428D0AEAD00B556FC /* lakeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lakeView.swift; sourceTree = "<group>"; };
+		4E03FDC628D0D11100B556FC /* peixe1.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = peixe1.dae; sourceTree = "<group>"; };
+		4E03FDC728D0D11100B556FC /* peixeTextura1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = peixeTextura1.png; sourceTree = "<group>"; };
+		4E03FDCA28D2019400B556FC /* dry-1.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = "dry-1.dae"; sourceTree = "<group>"; };
+		4E03FDCC28D201A600B556FC /* dry-1-texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dry-1-texture.png"; sourceTree = "<group>"; };
+		4E03FDCE28D2025F00B556FC /* water-1-texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "water-1-texture.png"; sourceTree = "<group>"; };
+		4E03FDCF28D2025F00B556FC /* water1.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = water1.dae; sourceTree = "<group>"; };
+		4ECFD2D928D2049F00ED205A /* wet-1.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = "wet-1.dae"; sourceTree = "<group>"; };
+		4ECFD2DA28D2049F00ED205A /* wet-1-texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wet-1-texture.png"; sourceTree = "<group>"; };
+		4ECFD2DD28D204D900ED205A /* water2.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = water2.dae; sourceTree = "<group>"; };
+		4ECFD2DE28D204D900ED205A /* water-2-texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "water-2-texture.png"; sourceTree = "<group>"; };
+		4ECFD2E128D205A800ED205A /* wet-2-texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wet-2-texture.png"; sourceTree = "<group>"; };
+		4ECFD2E228D205A800ED205A /* wet-2.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = "wet-2.dae"; sourceTree = "<group>"; };
+		4ECFD2E528D205DE00ED205A /* water-3-texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "water-3-texture.png"; sourceTree = "<group>"; };
+		4ECFD2E928D2065000ED205A /* water3.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = water3.dae; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +86,8 @@
 		36B9BFC828CE1CAB00BF1D80 /* DayLight Teste */ = {
 			isa = PBXGroup;
 			children = (
+				4E03FDC428D0AEAD00B556FC /* lakeView.swift */,
+				4E03FDBF28D0AE1600B556FC /* scnassets */,
 				36B9BFC928CE1CAB00BF1D80 /* AppDelegate.swift */,
 				36B9BFCD28CE1CAB00BF1D80 /* ViewController.swift */,
 				36B9BFD228CE1CAB00BF1D80 /* Assets.xcassets */,
@@ -59,6 +95,29 @@
 				36B9BFD728CE1CAB00BF1D80 /* Info.plist */,
 			);
 			path = "DayLight Teste";
+			sourceTree = "<group>";
+		};
+		4E03FDBF28D0AE1600B556FC /* scnassets */ = {
+			isa = PBXGroup;
+			children = (
+				4ECFD2E928D2065000ED205A /* water3.dae */,
+				4ECFD2E528D205DE00ED205A /* water-3-texture.png */,
+				4ECFD2E128D205A800ED205A /* wet-2-texture.png */,
+				4ECFD2E228D205A800ED205A /* wet-2.dae */,
+				4ECFD2DA28D2049F00ED205A /* wet-1-texture.png */,
+				4ECFD2D928D2049F00ED205A /* wet-1.dae */,
+				4ECFD2DE28D204D900ED205A /* water-2-texture.png */,
+				4ECFD2DD28D204D900ED205A /* water2.dae */,
+				4E03FDC628D0D11100B556FC /* peixe1.dae */,
+				4E03FDCC28D201A600B556FC /* dry-1-texture.png */,
+				4E03FDCE28D2025F00B556FC /* water-1-texture.png */,
+				4E03FDCF28D2025F00B556FC /* water1.dae */,
+				4E03FDC728D0D11100B556FC /* peixeTextura1.png */,
+				4E03FDC128D0AE2400B556FC /* Imagem0(unica).png */,
+				4E03FDCA28D2019400B556FC /* dry-1.dae */,
+				4E03FDC028D0AE2400B556FC /* dry.dae */,
+			);
+			path = scnassets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,8 +178,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ECFD2E428D205A800ED205A /* wet-2.dae in Resources */,
+				4ECFD2E028D204D900ED205A /* water-2-texture.png in Resources */,
+				4E03FDC828D0D11100B556FC /* peixe1.dae in Resources */,
+				4E03FDCB28D2019400B556FC /* dry-1.dae in Resources */,
+				4E03FDC928D0D11100B556FC /* peixeTextura1.png in Resources */,
 				36B9BFD628CE1CAB00BF1D80 /* LaunchScreen.storyboard in Resources */,
+				4ECFD2DF28D204D900ED205A /* water2.dae in Resources */,
+				4E03FDC228D0AE2400B556FC /* dry.dae in Resources */,
+				4ECFD2EA28D2065000ED205A /* water3.dae in Resources */,
+				4E03FDC328D0AE2400B556FC /* Imagem0(unica).png in Resources */,
 				36B9BFD328CE1CAB00BF1D80 /* Assets.xcassets in Resources */,
+				4E03FDD028D2025F00B556FC /* water-1-texture.png in Resources */,
+				4ECFD2DC28D2049F00ED205A /* wet-1-texture.png in Resources */,
+				4ECFD2DB28D2049F00ED205A /* wet-1.dae in Resources */,
+				4ECFD2E728D205DE00ED205A /* water-3-texture.png in Resources */,
+				4E03FDD128D2025F00B556FC /* water1.dae in Resources */,
+				4E03FDCD28D201A600B556FC /* dry-1-texture.png in Resources */,
+				4ECFD2E328D205A800ED205A /* wet-2-texture.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36B9BFCE28CE1CAB00BF1D80 /* ViewController.swift in Sources */,
+				4E03FDC528D0AEAD00B556FC /* lakeView.swift in Sources */,
 				36B9BFCA28CE1CAB00BF1D80 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,7 +347,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8D2H27TXKN;
+				DEVELOPMENT_TEAM = V7GM8G5V55;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "DayLight Teste/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -298,7 +374,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8D2H27TXKN;
+				DEVELOPMENT_TEAM = V7GM8G5V55;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "DayLight Teste/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
