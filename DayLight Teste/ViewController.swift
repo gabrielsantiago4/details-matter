@@ -11,6 +11,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    
     var waterDrank: Float = 0 {
         didSet {  //faz algo toda vida que um valor mudar
             
@@ -22,16 +23,33 @@ class ViewController: UIViewController {
     lazy var gradientBackground: CAGradientLayer = {
         let gradienteLayer = CAGradientLayer()
         gradienteLayer.frame = view.bounds
-        gradienteLayer.colors = [ UIColor.BackgroundColor1.cgColor, UIColor.BackroundColor2.cgColor]
+        gradienteLayer.colors = [ UIColor.backgroundColor1.cgColor, UIColor.backroundColor2.cgColor]
         return gradienteLayer
+    }()
+    
+    lazy var waterCounterHeader: UILabel = {
+        let waterCounterHeader = UILabel ()
+        waterCounterHeader.font = UIFont(name: "Quantico-Regular", size: 15.80)
+        waterCounterHeader.textColor = .counterColor
+        waterCounterHeader.text = "Você já bebeu"
+        return waterCounterHeader
+        
     }()
     
     lazy var waterCounter: UILabel = {
         let waterCounter = UILabel()
-        waterCounter.font = UIFont(name: "Quantico-Bold", size: 30)
-        waterCounter.textColor = .CounterColor
+        waterCounter.font = UIFont(name: "Quantico-Bold", size: 39)
+        waterCounter.textColor = .counterColor
         waterCounter.text = "0"
         return waterCounter
+    }()
+    
+    lazy var waterGoal: UILabel = {
+        let waterGoal = UILabel()
+        waterGoal.font = UIFont(name: "Quantico-Regular", size: 21)
+        waterGoal.textColor = .goalColor
+        waterGoal.text = "Sua meta: 3l"
+        return waterGoal
     }()
     
     lazy var button250 : UIButton = {
@@ -54,8 +72,8 @@ class ViewController: UIViewController {
     
     lazy var progressBar: UIProgressView = {
         let progressBar = UIProgressView(progressViewStyle: .default)
-        progressBar.trackTintColor = UIColor.ProgressbarTrack
-        progressBar.progressTintColor = UIColor.ProgressbarColor1
+        progressBar.trackTintColor = UIColor.progressbarTrack
+        progressBar.progressTintColor = UIColor.progressbarColor1
         progressBar.layer.cornerRadius = 13
         progressBar.layer.sublayers![1].cornerRadius = 13
         progressBar.subviews[1].clipsToBounds = true
@@ -77,18 +95,29 @@ class ViewController: UIViewController {
         view.addSubview(button500)
         view.addSubview(progressBar)
         view.addSubview(cloudImage)
+        view.addSubview(waterCounterHeader)
         view.addSubview(waterCounter)
+        view.addSubview(waterGoal)
         view.layer.insertSublayer(gradientBackground, at: 0)
         
+        configureConstraints()
+        
+    }
+    
+    func configureConstraints() {
+        
+        waterGoal.translatesAutoresizingMaskIntoConstraints = false
+        waterCounterHeader.translatesAutoresizingMaskIntoConstraints = false
         waterCounter.translatesAutoresizingMaskIntoConstraints = false
         button250.translatesAutoresizingMaskIntoConstraints = false
         button500.translatesAutoresizingMaskIntoConstraints = false
         progressBar.translatesAutoresizingMaskIntoConstraints = false
         cloudImage.translatesAutoresizingMaskIntoConstraints = false
+        
 
         NSLayoutConstraint.activate([
             waterCounter.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            waterCounter.topAnchor.constraint(equalTo: view.topAnchor, constant: 140)
+            waterCounter.topAnchor.constraint(equalTo: view.topAnchor, constant: 155)
         ])
         
         NSLayoutConstraint.activate([
@@ -114,53 +143,39 @@ class ViewController: UIViewController {
         ])
         
         NSLayoutConstraint.activate([
-            cloudImage.widthAnchor.constraint(equalToConstant: 205),
+            cloudImage.widthAnchor.constraint(equalToConstant: 215),
             cloudImage.heightAnchor.constraint(equalToConstant: 127.35),
             cloudImage.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             cloudImage.topAnchor.constraint(equalTo: view.topAnchor, constant: 90)
         ])
+        
+        NSLayoutConstraint.activate([
+            waterCounterHeader.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            waterCounterHeader.topAnchor.constraint(equalTo: view.topAnchor, constant: 135)
+        ])
+        
+        NSLayoutConstraint.activate([
+            waterGoal.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            waterGoal.topAnchor.constraint(equalTo: view.topAnchor, constant: 265)
+        ])
+        
     }
 
     
     
     @objc func addWater250() {
         self.waterDrank += 250
-        self.waterCounter.text = "\(self.waterDrank / 1000) l"
+        let value = self.waterDrank / 1000
+        self.waterCounter.text = String(format: "%.1fl", value)
+        
     }
     
     @objc func addWater500() {
         self.waterDrank += 500
-        self.waterCounter.text = "\(self.waterDrank / 1000) l"
-    }
-    
-    
-}
+        let value = self.waterDrank / 1000
+        self.waterCounter.text = String(format: "%.1fl", value)
 
-
-
-extension UIColor {
-    
-    class var BackgroundColor1: UIColor {
-        return UIColor(red: 67.0 / 255.0, green: 189.0 / 255.0, blue: 255.0 / 255.0, alpha: 1.0)
     }
     
-    class var BackroundColor2: UIColor {
-        return UIColor(red: 110.0 / 255.0, green: 217.0 / 255.0, blue: 245.0 / 255.0, alpha: 0.52)
-    }
     
-    class var ProgressbarColor1: UIColor {
-        return UIColor(red: 0.0 / 255.0, green: 120.0 / 255.0, blue: 188.0 / 255.0, alpha: 1.0)
-    }
-    
-    class var ProgressbarColor2: UIColor {
-        return UIColor(red: 67.0 / 255.0, green: 143.0 / 255.0, blue: 214.0 / 255.0, alpha: 0.75)
-    }
-    
-    class var ProgressbarTrack: UIColor {
-        return UIColor(red: 154.0 / 255.0, green: 213.0 / 255.0, blue: 255.0 / 255.0, alpha: 1.0)
-    }
-    
-    class var CounterColor: UIColor {
-        return UIColor(red: 13 / 255.0, green: 38 / 255.0, blue: 102 / 255.0, alpha: 1.0)
-    }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3608F80228D1F63A00B59F89 /* UIColor+Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3608F80128D1F63A00B59F89 /* UIColor+Palette.swift */; };
 		36ACF89928D1502B00AD8496 /* Quantico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36ACF89828D1502B00AD8496 /* Quantico-Regular.ttf */; };
 		36ACF89D28D1541700AD8496 /* Quantico-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36ACF89C28D1541700AD8496 /* Quantico-Bold.ttf */; };
 		36B9BFCA28CE1CAB00BF1D80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B9BFC928CE1CAB00BF1D80 /* AppDelegate.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3608F80128D1F63A00B59F89 /* UIColor+Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Palette.swift"; sourceTree = "<group>"; };
 		36ACF89828D1502B00AD8496 /* Quantico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quantico-Regular.ttf"; sourceTree = "<group>"; };
 		36ACF89C28D1541700AD8496 /* Quantico-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quantico-Bold.ttf"; sourceTree = "<group>"; };
 		36B9BFC628CE1CAB00BF1D80 /* DayLight Teste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DayLight Teste.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +69,7 @@
 			children = (
 				36B9BFC928CE1CAB00BF1D80 /* AppDelegate.swift */,
 				36B9BFCD28CE1CAB00BF1D80 /* ViewController.swift */,
+				3608F80128D1F63A00B59F89 /* UIColor+Palette.swift */,
 				36B9BFD228CE1CAB00BF1D80 /* Assets.xcassets */,
 				36B9BFD428CE1CAB00BF1D80 /* LaunchScreen.storyboard */,
 				36B9BFD728CE1CAB00BF1D80 /* Info.plist */,
@@ -149,6 +152,7 @@
 			files = (
 				36B9BFCE28CE1CAB00BF1D80 /* ViewController.swift in Sources */,
 				36B9BFCA28CE1CAB00BF1D80 /* AppDelegate.swift in Sources */,
+				3608F80228D1F63A00B59F89 /* UIColor+Palette.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
