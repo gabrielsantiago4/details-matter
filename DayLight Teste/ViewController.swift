@@ -71,15 +71,15 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //lakeView.loadScene(tipo: .dry1)
         
-        
+        lakeView.loadScene(tipo: .wet3)
         
 //        view.addSubview(button250)
 //        view.addSubview(button500)
 //        view.addSubview(progressBar)
 //        view.addSubview(cloudImage)
         view.layer.insertSublayer(gradientBackground, at: 0)
-        
         view.addSubview(lakeView)
 
         
@@ -95,7 +95,7 @@ class ViewController: UIViewController {
 //        ])
         
         NSLayoutConstraint.activate([
-            lakeView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.3),
+            lakeView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.5),
             lakeView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             lakeView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             lakeView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
