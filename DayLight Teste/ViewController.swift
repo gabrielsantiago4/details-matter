@@ -72,13 +72,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //lakeView.loadScene(tipo: .dry1)
-        
         lakeView.loadScene(tipo: .wet3)
         
-//        view.addSubview(button250)
-//        view.addSubview(button500)
-//        view.addSubview(progressBar)
-//        view.addSubview(cloudImage)
         view.layer.insertSublayer(gradientBackground, at: 0)
         view.addSubview(lakeView)
 

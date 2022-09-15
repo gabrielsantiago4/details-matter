@@ -60,7 +60,6 @@ enum Scenario: Int, CaseIterable{
         case .wet1:
             return [LakeView.wet1Scenario, LakeView.water2Scenario]
         case .wet2:
-          
             return [LakeView.wet2Scenario, LakeView.water3Scenario,LakeView.nemo]
         case .wet3:
             return [LakeView.wet3Scenario, LakeView.water4Scenario,LakeView.nemo, LakeView.dori]
@@ -288,6 +287,10 @@ class LakeView: SCNView {
         scene.rootNode.eulerAngles = SCNVector3(0.toRadian(), 320.toRadian(),0.toRadian())
         
         self.scene = scene
+        
+        self.scene?.rootNode.opacity = 0
+        self.scene?.rootNode.runAction(SCNAction.fadeOpacity(to: 1, duration: 1))
+
         
         config()
 
