@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3608F80228D1F63A00B59F89 /* UIColor+Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3608F80128D1F63A00B59F89 /* UIColor+Palette.swift */; };
+		3608F80428D2A3F300B59F89 /* ProgressbarCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3608F80328D2A3F300B59F89 /* ProgressbarCustom.swift */; };
 		36ACF89928D1502B00AD8496 /* Quantico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36ACF89828D1502B00AD8496 /* Quantico-Regular.ttf */; };
 		36ACF89D28D1541700AD8496 /* Quantico-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36ACF89C28D1541700AD8496 /* Quantico-Bold.ttf */; };
 		36B9BFCA28CE1CAB00BF1D80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B9BFC928CE1CAB00BF1D80 /* AppDelegate.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		3608F80128D1F63A00B59F89 /* UIColor+Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Palette.swift"; sourceTree = "<group>"; };
+		3608F80328D2A3F300B59F89 /* ProgressbarCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressbarCustom.swift; sourceTree = "<group>"; };
 		36ACF89828D1502B00AD8496 /* Quantico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quantico-Regular.ttf"; sourceTree = "<group>"; };
 		36ACF89C28D1541700AD8496 /* Quantico-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quantico-Bold.ttf"; sourceTree = "<group>"; };
 		36B9BFC628CE1CAB00BF1D80 /* DayLight Teste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DayLight Teste.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +75,7 @@
 				36B9BFD228CE1CAB00BF1D80 /* Assets.xcassets */,
 				36B9BFD428CE1CAB00BF1D80 /* LaunchScreen.storyboard */,
 				36B9BFD728CE1CAB00BF1D80 /* Info.plist */,
+				3608F80328D2A3F300B59F89 /* ProgressbarCustom.swift */,
 				36ACF89428D14A6800AD8496 /* Fonts */,
 			);
 			path = "DayLight Teste";
@@ -153,6 +156,7 @@
 				36B9BFCE28CE1CAB00BF1D80 /* ViewController.swift in Sources */,
 				36B9BFCA28CE1CAB00BF1D80 /* AppDelegate.swift in Sources */,
 				3608F80228D1F63A00B59F89 /* UIColor+Palette.swift in Sources */,
+				3608F80428D2A3F300B59F89 /* ProgressbarCustom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,8 +300,9 @@
 				INFOPLIST_FILE = "DayLight Teste/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +312,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -323,8 +328,9 @@
 				INFOPLIST_FILE = "DayLight Teste/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,7 +340,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -24,6 +24,8 @@ class ViewController: UIViewController {
         let gradienteLayer = CAGradientLayer()
         gradienteLayer.frame = view.bounds
         gradienteLayer.colors = [ UIColor.backgroundColor1.cgColor, UIColor.backroundColor2.cgColor]
+        gradienteLayer.startPoint = CGPoint(x: 0.5, y: 0)
+        gradienteLayer.endPoint = CGPoint(x: 0.5, y: 1.1)
         return gradienteLayer
     }()
     
@@ -71,9 +73,12 @@ class ViewController: UIViewController {
     }()
     
     lazy var progressBar: UIProgressView = {
-        let progressBar = UIProgressView(progressViewStyle: .default)
+//        let progressBar = UIProgressView(progressViewStyle: .default)
+        let progressBar = GradientProgressView(progressViewStyle: .bar)
         progressBar.trackTintColor = UIColor.progressbarTrack
-        progressBar.progressTintColor = UIColor.progressbarColor1
+//        progressBar.progressTintColor = UIColor.progressbarColor1
+        progressBar.firstColor = .progressbarColor1
+        progressBar.secondColor = .progressbarColor2
         progressBar.layer.cornerRadius = 13
         progressBar.layer.sublayers![1].cornerRadius = 13
         progressBar.subviews[1].clipsToBounds = true
@@ -143,9 +148,9 @@ class ViewController: UIViewController {
         ])
         
         NSLayoutConstraint.activate([
-            cloudImage.widthAnchor.constraint(equalToConstant: 215),
+            cloudImage.widthAnchor.constraint(equalToConstant: 205),
             cloudImage.heightAnchor.constraint(equalToConstant: 127.35),
-            cloudImage.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            cloudImage.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 3),
             cloudImage.topAnchor.constraint(equalTo: view.topAnchor, constant: 90)
         ])
         
